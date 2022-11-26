@@ -48,7 +48,7 @@ class Operaciones:
         f.close()
 
 
-# Aqui se ingresan los archivos en forma de listas separadas por ","
+# Aqui se ingresa el texto en forma de listas separadas por ","
 datos = [
     'Nombre: Juan Manuel Nuñez de la Cruz',
     'Edad: 25 años',
