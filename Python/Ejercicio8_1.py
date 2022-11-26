@@ -2,14 +2,16 @@
 
 class Operaciones:
 
-    def main(self):
+    def __init__(self):
         self.archivo = str(
             input('Ingrese el nombre de su archivo: '))
         self.datos = datos
+        
+    def main(self):
         print("Operaciones frecuentes")
         print("1- Escribir un archivo nuevo")
         print(
-            "2- Añadir datos a archvio existente")
+            "2- Añadir datos a archivo existente")
         print()
         Valor = None
 
@@ -48,7 +50,7 @@ class Operaciones:
         f.close()
 
 
-# Aqui se ingresa el texto en forma de listas separadas por ","
+# Aqui se ingresa el texto en forma de lista, separadas por ","
 datos = [
     'Nombre: Juan Manuel Nuñez de la Cruz',
     'Edad: 25 años',
