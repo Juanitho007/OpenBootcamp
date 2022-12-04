@@ -19,7 +19,6 @@ html5test.com, nos permite ver que funcionalidades soporta cada navegador.
 -->
 
 <!-- Etiquetas habituales -->
-
 <!-- 
   <!DOCTYPE html>
 <html lang="en">
@@ -53,10 +52,92 @@ html5test.com, nos permite ver que funcionalidades soporta cada navegador.
       <li>listadesordenada item 5</li>
       <li>listadesordenada item 6</li>
     </ul>
-
-
-
   </body>
 </html> 
-
 -->
+
+<!-- Formularios -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="base.html" method="GET">
+      <div>
+        <label for="user">Nombre de usuario</label>
+        <input type="text" name="user" id="user" required />
+      </div>
+      <div>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" required />
+      </div>
+      <div>
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          required
+          min="18"
+          max="90"
+          step="5"
+        />
+      </div>
+      <div>
+        <label for="email">Correo electronico</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento" required />
+      </div>
+      <div>
+        <label for="text">Comentarios</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <button>Enviar</button>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
+ -->
+
+<!-- Tablas -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <h1>Horario de programación</h1>
+    <table>
+      <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>JS</td>
+        <td>Python</td>
+        <td>Base de datos</td>
+        <td>Descanso</td>
+        <td>Descanso</td>
+      </tr>
+    </table>
+  </body>
+</html>
