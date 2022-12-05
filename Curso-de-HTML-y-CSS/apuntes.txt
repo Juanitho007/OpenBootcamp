@@ -171,3 +171,161 @@ html5test.com, nos permite ver que funcionalidades soporta cada navegador.
   </body>
 </html>
 -->
+
+<!-- CSS -->
+<!-- <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Trabajando con CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cascading Style Sheet</h1>
+    <p class="encabezado">Este parrafo contiene información importante</p>
+    <p id="secundario">Este parafo tiene información menos importante</p>
+    <span id="secundario"
+      >Este no es un parrafo por lo cual no tiene la propiedad</span
+    >
+    <p class="warning">Peligro</p>
+    <button class="warning">Alerta</button>
+    <h3 class="warning">Esto es importante saberlo</h3>
+  </body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Utilidades CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Utilidades CSS</h1>
+    <button
+      style="padding: 10px; border: none; border-radius: 10px; font-size: 18pt"
+    >
+      Boton personalizado
+    </button>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Intro Estilo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <h1>Colores</h1>
+    <div class="fondo">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+        quis nemo velit perferendis facere consectetur repudiandae ex! Ex
+        distinctio ipsum dolore? Ipsa iste dolores ea ipsum sapiente. Labore,
+        maiores quidem?
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis
+        rerum rem perferendis asperiores autem corporis quibusdam ipsum
+        deleniti, delectus repellendus officia accusantium. Fugit aut nulla
+        autem, possimus illum beatae?
+      </p>
+    </div>
+    <br />
+    <h2>Espacios y tamaños</h2>
+    <div class="ancho">
+      <h3>cambiar anchura</h3>
+    </div>
+    <div class="alto">
+      <h3>cambiar altura</h3>
+    </div>
+  </body>
+</html>
+
+
+
+hoja style.css
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+html {
+  background-color: #4cc9f0;
+  /* define la fuente */
+  /* importar fuentes de google  fonts.google.com */
+  font-family: "Nerko One", cursive;
+}
+
+h1 {
+  /* Define la propiedad color de letra de la etiqueta h1*/
+  color: #4361ee;
+}
+
+p {
+  /* Define la propiedad color y tamaño de letra de la etiqueta p*/
+  color: blue;
+  font-size: 20pt;
+  /* Sobreescribe la propiedad anterior */
+  color: #3a0ca3;
+}
+
+/* Selectores por Id */
+p#secundario {
+  color: #3a0ca3;
+  font-size: 20pt;
+}
+
+/* Selectores por clase */
+.encabezado {
+  color: #3a0ca3;
+  text-transform: uppercase;
+  font-size: 18pt;
+}
+
+/* Selector universal de clase */
+
+*.warning {
+  color: #7209b7;
+  text-transform: uppercase;
+  font-size: 20pt;
+  text-decoration: underline;
+}
+
+/* Estilos para colores  www.coolors.co, vienen en formato Hexadecimal */
+
+/* Fondo de color o imagen */
+*.fondo {
+  background-color: #f72585;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/482/975/non_2x/blue-freeform-gradient-free-vector.jpg");
+  background-position: right center;
+}
+
+/* Espacios y tamaños */
+.ancho {
+  background-color: #3a0ca3;
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.alto {
+  background-color: #4361ee;
+  font-size: 30px;
+  height: 100px;
+  color: white;
+  border-radius: 35px;
+  padding: 30px;
+}
+
+
+-->

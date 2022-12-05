@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  background-color: rgb(255, 236, 255);
+  font-family: "Nerko One", cursive;
+}
+#elemento-1 {
+  color: red;
+  font-size: 2rem;
+}
+
+.encabezado {
+  background-color: #cabbec;
+  border-radius: 10px;
+  padding: 30px;
+}
