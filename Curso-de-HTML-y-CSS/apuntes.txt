@@ -329,3 +329,530 @@ p#secundario {
 
 
 -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Disposiciones y alineaciones</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <h1>Disposiciones y alineaciones</h1>
+    <div class="div-1">Este es un div</div>
+    <img
+      class="img"
+      src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+      alt="videojuego worms forts"
+    />
+    <br />
+    <span class="span-1">Esto es un span</span>
+    <span class="span-2">Esto es otro span</span>
+    <div class="div-2">Este es otro div</div>
+  </body>
+</html>
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  background-color: rgb(255, 236, 255);
+  font-family: "Nerko One", cursive;
+}
+
+.div-1,
+.div-2 {
+  background-color: #cabbec;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.span-1 {
+  background-color: #4c00ff;
+  border-radius: 5px;
+  color: white;
+  /* display: block; permite obtener una linea individual en cada span */
+  /* display: inline; por defecto */
+}
+
+.span-2 {
+  background-color: #4c00ff;
+  border-radius: 5px;
+  color: white;
+  /* Establece en que lugar poner los elementos de linea */
+  float: right;
+  /* display: block; permite obtener una linea individual en cada span */
+  /* display: inline; por defecto */
+}
+
+.img {
+  width: 250px;
+  height: auto;
+}
+
+
+------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <h1>Posicionamiento en CSS</h1>
+    <li>static</li>
+    <li>relative</li>
+    <li>fixed</li>
+    <li>absolute</li>
+    <li>sticky</li>
+    <br />
+    <div class="static">Soy un div estatico</div>
+    <div class="relative">Soy un div relativo</div>
+    <div class="fixed">Soy un div fixed</div>
+    <div class="absolute">Soy un div absolute</div>
+    <div class="sticky">Soy un div sticky</div>
+  </body>
+</html>
+
+
+css
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  background-color: rgb(255, 236, 255);
+  font-family: "Nerko One", cursive;
+}
+
+.div-1,
+.div-2 {
+  background-color: #cabbec;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.span-1 {
+  background-color: #4c00ff;
+  border-radius: 5px;
+  color: white;
+  /* display: block; permite obtener una linea individual en cada span */
+  /* display: inline; por defecto */
+}
+
+.span-2 {
+  background-color: #4c00ff;
+  border-radius: 5px;
+  color: white;
+  /* Establece en que lugar poner los elementos de linea */
+  float: right;
+  /* display: block; permite obtener una linea individual en cada span */
+  /* display: inline; por defecto */
+}
+
+.img {
+  width: 250px;
+  height: auto;
+}
+
+div {
+  border: 1px solid #4c00ff;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+/* Se posicione en relación al posicionamiento original */
+.relative {
+  position: relative;
+  left: 80px;
+  margin-left: 20px;
+}
+
+/* Se mantiene fijo sin importar el tamaño de la página, se posiciona en relación al viewport */
+.fixed {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #4c00ff;
+  color: white;
+  z-index: 10;
+}
+
+/* Se mantiene fijo en función al padre relativo*/
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4c00ff;
+  color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  left: 10px;
+  background-color: #4c00ff;
+  color: white;
+  /* Se usa para fijar menús que siempre estén visibles */
+  z-index: 2;
+}
+
+--------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex box</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="contenido-1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          odit inventore! Recusandae incidunt quaerat quisquam neque aspernatur
+          distinctio natus, totam quae asperiores placeat tempora non officia
+          consectetur nam in? Deleniti?
+        </p>
+      </div>
+      <div class="contenido-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sequi
+          delectus consequuntur unde ipsa odit quia pariatur animi laudantium
+          deleniti impedit tempora harum, tenetur suscipit voluptatibus adipisci
+          nobis illum earum!
+        </p>
+      </div>
+      <div class="contenido-3">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+          assumenda eum laudantium facilis officiis similique atque sunt ea
+          voluptas nobis. Assumenda iure hic quasi nulla dolor sapiente amet at
+          commodi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+.flex {
+  /* Ajusta la pagina al tamaño de la pagina */
+  display: flex;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  height: 300px;
+  /* Distribuye el espacio al rededor */
+  justify-content: space-around;
+  /* Redimensiona los elementos en función de la pantalla */
+  flex-wrap: wrap;
+  /* Dimensiona en toda la altura del contenedor */
+  align-items: center;
+  /* Reenderizado */
+  flex-direction: column;
+}
+/* Para experimentar https://codepen.io/enxaneta/full/adLPwv */
+.contenido-1 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+}
+.contenido-2 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+}
+.contenido-3 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+}
+
+-------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <div class="contenedor-hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+        pariatur ullam ex corrupti accusantium ipsum doloremque, natus, quos,
+        sed nam qui officia repellendus est doloribus quae magnam ad molestias!
+      </p>
+    </div>
+    <div class="contenedor-scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+        pariatur ullam ex corrupti accusantium ipsum doloremque, natus, quos,
+        sed nam qui officia repellendus est doloribus quae magnam ad molestias!
+      </p>
+    </div>
+    <div class="contenedor-visible">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+        pariatur ullam ex corrupti accusantium ipsum doloremque, natus, quos,
+        sed nam qui officia repellendus est doloribus quae magnam ad molestias!
+      </p>
+    </div>
+
+    <div class="contenedor-auto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+        pariatur ullam ex corrupti accusantium ipsum doloremque, natus, quos,
+        sed nam qui officia repellendus est doloribus quae magnam ad molestias!
+      </p>
+    </div>
+
+    <div class="contenedor-scrollx">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+        pariatur ullam ex corrupti accusantium ipsum doloremque, natus, quos,
+        sed nam qui officia repellendus est doloribus quae magnam ad molestias!
+      </p>
+    </div>
+  </body>
+</html>
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+.contenedor-hidden {
+  margin: 10px 0px;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.contenedor-scroll {
+  margin: 10px 0px;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  overflow: scroll;
+}
+.contenedor-visible {
+  margin: 10px 0px;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  overflow: visible;
+}
+.contenedor-auto {
+  margin: 10px 0px;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  overflow: auto;
+}
+
+.contenedor-scrollx {
+  margin: 10px 0px;
+  background-color: rgb(232, 255, 151);
+  font-family: "Nerko One", cursive;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+-----------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <img
+      class="imagenprincipal"
+      src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+      alt="Imagende videojuego"
+    />
+    <div class="galeria">
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+      <img
+        class="img-galeria"
+        src="/openBootcamp/Curso-de-HTML-y-CSS/media/videojuego.jpg"
+        alt="Imagende videojuego"
+      />
+    </div>
+  </body>
+</html>
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.imagenprincipal {
+  width: 30vw;
+  opacity: 0.3;
+}
+
+.imagenprincipal:hover {
+  opacity: 1;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img-galeria {
+  width: 100px;
+}
+
+.img-galeria:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+-----------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="stylesheet" href="css/ejercicio5.css" />
+  </head>
+  <body>
+    <video
+      class="video"
+      playsinline
+      autoplay
+      loop
+      muted
+      src="/openBootcamp/Curso-de-HTML-y-CSS/media/Videos.mp4"
+      type="video/mp4"
+    ></video>
+    
+  </body>
+</html>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Nerko One", cursive;
+  color: white;
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+-------------------
